@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0f172a;
+
+    color:#f8fafc;
+
+    font-family:
+        "Segoe UI",
+        sans-serif;
+
+    padding:20px;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:2.2rem;
+
+    color:#38bdf8;
+}
+
+h2{
+
+    margin-bottom:12px;
+
+    color:#e2e8f0;
+}
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#334155;
+
+    margin:25px 0;
+}
+
+.card{
+
+    background:#1e293b;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:
+        translateY(-2px);
+}
+
+#velocidade{
+
+    font-size:4rem;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    color:#22c55e;
+}
+
+#velocidade::after{
+
+    content:"";
+
+    display:block;
+
+    margin-top:10px;
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    margin-bottom:12px;
+}
+
+button:hover{
+
+    opacity:.9;
+
+    transform:
+        scale(1.01);
+}
+
+#btnIniciar{
+
+    background:#22c55e;
+
+    color:white;
+}
+
+#btnParar{
+
+    background:#ef4444;
+
+    color:white;
+}
+
+#historico{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+#historico .card{
+
+    border-left:
+        5px solid
+        #38bdf8;
+}
+
+#historico p{
+
+    margin-bottom:8px;
+
+    line-height:1.5;
+}
+
+#historico button{
+
+    background:#2563eb;
+
+    color:white;
+
+    margin-top:10px;
+}
+
+#detalhes{
+
+    margin-top:20px;
+}
+
+#detalhes .card{
+
+    border-left:
+        5px solid
+        #22c55e;
+}
+
+#eventos{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+#eventos .card{
+
+    border-left:
+        5px solid
+        #f59e0b;
+}
+
+#mapa{
+
+    width:100%;
+
+    height:350px;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+    border:
+        2px solid
+        #334155;
+}
+
+#statusInternet{
+
+    font-weight:bold;
+}
+
+#viagensPendentes{
+
+    color:#f59e0b;
+
+    font-weight:bold;
+}
+
+#ultimaSync{
+
+    color:#22c55e;
+
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    body{
+
+        padding:15px;
+    }
+
+    h1{
+
+        font-size:1.8rem;
+    }
+
+    #velocidade{
+
+        font-size:3rem;
+    }
+
+    button{
+
+        padding:14px;
+    }
+}
